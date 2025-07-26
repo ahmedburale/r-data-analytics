@@ -57,3 +57,14 @@ df <- data.frame(
   scores = c(90,50,24)
 )
 
+
+#------------------------------------------------------------#
+# Output as input: reusing results                         #
+#------------------------------------------------------------#
+
+lm(mpg~wt, data=mtcars)
+
+lmfit <- lm(mpg~wt, data=mtcars)
+
+summary(lmfit)
+
